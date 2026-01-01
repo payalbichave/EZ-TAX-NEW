@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EZ Tax</title>
+    <style>     /* navbar */
+        .nav_elements{
+            padding-left: 300px;
+        }
+        
+        .nav_text{
+            font-size: 1.5em;
+        }
+        
+        
+        .logo {
+            height: 100px;
+            size: 400px;
+            padding-bottom: 0px;
+            padding-left: 50px;    
+        }
+        
+        
+        nav ul {
+            list-style: none;
+            text-align: right;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: rgb(0, 234, 255);
+            text-decoration: none;
+        }
+      
+
+
+
+        header {
+    background:#042547;
+    padding: 5px;
+                }
+
+                body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: linear-gradient(135deg, #021c35, #003366);
+    padding: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.6);
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #66ccff;
+    margin-bottom: 15px;
+}
+
+section {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+
+.team-member {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+button {
+    background-color: #2173c5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #002855;
+    transform: scale(1.05);
+}
+
+#features {
+    list-style-type: none;
+    padding: 15px;
+    background: linear-gradient(135deg, #021c35, #003366);
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#features li {
+    padding: 8px;
+    border-bottom: 10px solid rgba(9, 0, 0, 0.941);
+}
+
+#features li:last-child {
+    border-bottom: none;
+}
+
+    
+    </style>
+</head>
+<header>
+    <div class="container1">
+        
+      
+        <nav>
+           <table>
+<tr>
+<td>
+    <img  src="logo.png" alt="EZ Tax Logo" class="logo">
+</td>
+<td class="nav_elements">
+<ul >
+    <li><a class="nav_text" href="index.html">Home</a></li>
+    
+    <li><a class="nav_text" href="about.html">About</a></li>
+    <li><a class="nav_text" href="http://localhost:8501">Upload</a></li>
+    <li><a class="nav_text" href="calc/index.html">Tax Calculator</a></li>
+    <li><a class="nav_text" href="taxupdates.html">Tax Updates</a></li>
+    <li><a class="nav_text" href="#contact">Contact</a></li>
+</ul>
+</td></tr>
+           </table>
+            <!-- <h1>EZ Tax</h1> -->
+            
+        </nav>
+    </div>
+</header>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+            <p style="padding-left: 20%; padding-right: 20%;">EZ Tax is a user-friendly platform designed to simplify tax filing. Our goal is to make tax compliance hassle-free by offering automated tax calculations, real-time tax updates, and an intuitive chatbot for assistance. With secure image processing for document handling, we ensure accuracy and efficiency. Our expert team is dedicated to making tax filing effortless for everyone. 🚀</p>
+        </header>
+        
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>EZ Tax aims to simplify tax filing by providing a user-friendly platform that ensures accuracy, efficiency, and real-time assistance.</p>
+        </section>
+        
+        <section id="features">
+            <h2>Key Features</h2>
+            
+                <p>AI-powered chatbot for instant tax assistance</p>
+                <p>Image processing for automated document handling</p>
+                <p>Real-time tax regulation updates</p>
+                <p>Secure and efficient tax computation</p>
+            
+        </section>
+        
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img style="height: 400px;width: 500px;"
+                src="team1.jpg" alt="Team Member 1">
+               
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@eztax.com</p>
+            <p>Phone: +91-1234567890</p>
+            <button onclick="showMessage()">Get in Touch</button>
+        </section>
+    </div>
+    
+    <script>
+        function showMessage() {
+            alert("Thank you for reaching out! We will get back to you soon.");
+        }
+    </script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="4DBV2slqwdkCtSlocDLIo";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+</body>
+</html>

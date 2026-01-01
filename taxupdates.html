@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax News</title>
+    <link rel="stylesheet" href="tu.css">
+</head>
+
+<body>
+    <header style="padding-bottom: 50px;">
+        <div class="container1">
+            
+          
+            <nav>
+               <table>
+    <tr>
+    <td>
+        <img  src="logo.png" alt="EZ Tax Logo" class="logo">
+    </td>
+    <td class="nav_elements">
+    <ul >
+        <li><a class="nav_text" href="index.html">Home</a></li>
+        
+        <li><a class="nav_text" href="about.html">About</a></li>
+        <li><a class="nav_text" href="http://localhost:8501">Upload</a></li>
+        <li><a class="nav_text" href="calc/index.html">Tax Calculator</a></li>
+        <li><a class="nav_text" href="taxupdates.html">Tax Updates</a></li>
+        
+    </ul>
+    </td></tr>
+               </table>
+                <!-- <h1>EZ Tax</h1> -->
+                
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="tu.js"></script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="4DBV2slqwdkCtSlocDLIo";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+</body>
+</html>

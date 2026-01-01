@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tax Calculator (FY 2025-26)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+
+</head>
+<body >
+    
+    <div class="container">
+        <h2>India Tax Calculator (FY 2025-26)</h2>
+
+        <label for="income">Annual Income (₹):</label>
+        <input type="number" id="income" placeholder="Enter your income">
+
+        <h3>Deductions (Old Regime Only)</h3>
+        <div class="deduction-section">
+            <div class="deduction-box">
+                <label for="80C">80C (Investments - ₹1.5L max):</label>
+                <input type="number" id="80C" placeholder="PPF, ELSS, EPF, LIC">
+            </div>
+
+            <div class="deduction-box">
+                <label for="80D">80D (Health Insurance - ₹25K/50K):</label>
+                <input type="number" id="80D" placeholder="Medical insurance premium">
+            </div>
+
+            <div class="deduction-box">
+                <label for="80E">80E (Education Loan Interest):</label>
+                <input type="number" id="80E" placeholder="Interest paid on Edu Loan">
+            </div>
+
+            <div class="deduction-box">
+                <label for="80CCD">80CCD(1B) (NPS - ₹50K max):</label>
+                <input type="number" id="80CCD" placeholder="Contribution to NPS">
+            </div>
+
+            <div class="deduction-box">
+                <label for="exemptions">Exemptions (HRA, LTA) (₹):</label>
+                <input type="number" id="exemptions" placeholder="House Rent Allowance, LTA">
+            </div>
+        </div>
+
+        <button onclick="calculateTax()">Calculate Tax</button>
+
+        <h3>Results:</h3>
+        <p id="oldRegimeResult"></p>
+        <p id="newRegimeResult"></p>
+        <p id="bestOption"></p>
+
+        <h4>Tax Saving Tips:</h4>
+        <p id="taxSuggestions"></p>
+
+        <h3>Tax Comparison Graph</h3>
+        <canvas id="taxChart"></canvas> <!-- Graph Container -->
+
+        <h3>OLD   / NEW</h3>
+        <p class="description">
+            Enter your income and deductions, and the calculator will compare the old and new tax regimes based on the latest 2025-26 slabs. It will suggest the best regime and provide tax-saving tips based on unused deductions.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="4DBV2slqwdkCtSlocDLIo";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+</body>
+</html>

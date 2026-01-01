@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ Tax</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script><script>
+        document.querySelector("spline-viewer").addEventListener("pointermove", (event) => {
+            const spline = document.querySelector("spline-viewer");
+            spline.setAttribute("rotation", `${event.clientX * 0.05} ${event.clientY * 0.05} 0`);
+        });
+    </script>
+    
+
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body class="dark-blue-theme">
+    <header>
+        <div class="container1">
+            
+          
+            <nav>
+               <table>
+<tr>
+    <td>
+        <img  src="logo.png" alt="EZ Tax Logo" class="logo">
+    </td>
+    <td class="nav_elements">
+    <ul>
+        <li>
+            
+        </li>
+        <li><a class="nav_text" href="#services">Services</a></li>
+        <li><a class="nav_text" href="about.html">About</a></li>
+        <li><a class="nav_text" href="http://localhost:8501">Upload</a></li>
+        <li><a class="nav_text" href="calc/index.html">Tax Calculator</a></li>
+        <li><a class="nav_text" href="taxupdates.html">Tax Updates</a></li>
+        <li><a class="nav_text" href="#contact">Contact</a></li>
+    </ul>
+</td></tr>
+               </table>
+                <!-- <h1>EZ Tax</h1> -->
+                
+            </nav>
+        </div>
+    </header>
+ 
+
+    <section id="hero">
+        
+     
+    
+        <div class="containerbg">
+            
+<spline-viewer url="https://prod.spline.design/2e8Bx-po8uq4MWDP/scene.splinecode"></spline-viewer>
+        </div>
+    
+      
+    
+      
+    </section>
+  
+
+    <section style="padding-bottom: 3cm;padding-top: 2cm" id="services" class="services-section">
+        <div class s="services-container">
+            <h1>Our Services</h1>
+            <h4>We provide cutting-edge solutions to simplify your tax filing experience.</h4>
+            
+            <!DOCTYPE html>
+
+
+    <div class="services-container">
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <img src="te.png" alt="Tax Estimation">
+                <h3>Tax Estimation</h3>
+                <div class="service-popup">
+                    <p>Accurate tax estimations based on your financial details.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="tr.png" alt="Tax Regime Suggestions">
+                <h3>Tax Regime Suggestions</h3>
+                <div class="service-popup">
+                    <p>Personalized regime recommendations for maximum savings.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="tm.png" alt="Tax Minimization">
+                <h3>Tax Minimization</h3>
+                <div class="service-popup">
+                    <p>Smart strategies to reduce your tax liabilities effectively.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="tf.png" alt="Easy Tax Filing">
+                <h3>Easy Tax Filing</h3>
+                <div class="service-popup">
+                    <p>Hassle-free tax filing with an intuitive, guided process.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+            
+        </div>
+        
+    </section>
+    
+    
+    
+
+        <section style="padding-bottom: 3cm;padding-top: 2cm;" id="about" class="about-section">
+            <div class="about-container">
+                <h2>About Us</h2>
+                <p>EZ Tax is your smart tax companion, simplifying tax filing with intelligent automation, real-time updates, and an AI-powered assistant. Our secure and user-friendly platform ensures you maximize savings while minimizing hassle. 🚀</p>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Why Choose EZ Tax?</h3>
+                        <ul>
+                            <li>🔹 AI-powered chatbot for instant tax guidance</li>
+                            <li>🔹 Automated document processing for accuracy</li>
+                            <li>🔹 Real-time updates on tax laws & regulations</li>
+                            <li>🔹 Smart tax planning for maximum savings</li>
+                        </ul>
+                        <a href="about.html" class="about-btn">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        
+                        <img style="height: 7cm; width: 15cm;" src="about.png" alt="EZ Tax Team">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+
+    <section style="padding-bottom: 3cm;padding-top: 2cm" id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Type your message" required></textarea>
+                </div>
+    
+                <button type="submit">Submit</button>
+                <p id="successMessage" class="hidden">✅ Message Sent Successfully!</p>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>EZ Tax</h3>
+                <p>Making tax management simple and hassle free. <br>
+                    EZ Tax simplifies tax management with an <br> 
+                    easy-to-use platform for tax estimation ,<br>
+                    regime comparison, and filing. Our goal is <br>
+                    to make tax compliance efficient, accurate,<br>
+                    and stress-free. With real-time tax updates <br>
+                    and a built-in chatbot, we ensure users <br>
+                    get the best tax-saving strategies. <br>
+                    Let me know if you want any modifications! <br>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="calc/index.html">Tax Calculator</a></li>
+                    <li><a href="taxupdates.html">Tax Updates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="x.png" alt="X"></a>
+                    <a href="#"><img src="in.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            
+            
+        
+        <p class="footer-bottom">&copy; 2025 EZ Tax. All Rights Reserved.</p>
+    </footer>
+   
+
+ 
+
+    <script src="newscript.js"></script>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="4DBV2slqwdkCtSlocDLIo";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+    
+
+    
+
+    
+</body>
+
+</html>
+
